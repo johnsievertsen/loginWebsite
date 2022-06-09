@@ -4,6 +4,7 @@ body {
 }
 
 .title {
+    top: 18px;
     position: absolute;
     width: 100%;
     color: yellowgreen;
@@ -47,13 +48,13 @@ button[type=submit] {
 }
 
 .register-btn {
-    top: 275px;
+    top: 335px;
     height: 45px;
 }
 
 .newUser {
     position: absolute;
-    top: 225px;
+    top: 305px;
     width: 100%;
     text-align: center;
     color: rgb(104, 8, 221);

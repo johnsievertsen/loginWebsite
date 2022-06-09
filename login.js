@@ -23,13 +23,16 @@ function login(e) {
     if (userInnerArray.some(userAuth) && passInnerArray.some(passAuth)) {
         modal.style.display = "block";
         modalText.innerHTML = `Welcome ${userInputText}`;
+        document.querySelector('.modal-content').style.color = "blueviolet";
     } else {
         modal.style.display = "block";
         modalText.innerHTML = 'Incorrect Username or Password';
+        document.querySelector('.modal-content').style.color = "red";
     }
     if (!userInputText || !passInputText) {
         modal.style.display = "block";
         modalText.innerHTML = 'Please enter a username and password.';
+        document.querySelector('.modal-content').style.color = "red";
     }
 }
 
@@ -51,6 +54,7 @@ function register(e) {
     if (userInnerArray.some(userAuth)) {
         modal.style.display = "block";
         modalText.innerHTML = 'This username already exists.';
+        document.querySelector('.modal-content').style.color = "red";
     } else {
         num++;
         localStorage.setItem(`username${num}`, userInputText);
@@ -61,10 +65,12 @@ function register(e) {
         ip.push([passInnerArray[num]]);
         modal.style.display = "block";
         modalText.innerHTML = 'Account registered. You may now log in.';
+        document.querySelector('.modal-content').style.color = "blueviolet";
     }
     if (!userInputText || !passInputText) {
         modal.style.display = "block";
         modalText.innerHTML = 'Please enter a username and password.';
+        document.querySelector('.modal-content').style.color = "red";
     }
 }
 loginBtn.addEventListener('click', login);

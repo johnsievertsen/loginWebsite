@@ -24,7 +24,7 @@ function login(e) {
         modal.style.display = "block";
         modalText.innerHTML = `Welcome ${userInputText}`;
         document.querySelector('.modal-content').style.color = "blueviolet";
-        window.open(/website.html/, '_blank');
+        window.open(johnsievertsen.github.io/loginWebsite/website, '_blank');
     } else {
         modal.style.display = "block";
         modalText.innerHTML = 'Incorrect Username or Password';

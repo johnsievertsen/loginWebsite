@@ -1,5 +1,5 @@
 function newPage() {
-    window.open(/website.html/, '_blank');
+    window.open(johnsievertsen.github.io/loginWebsite/website, '_blank');
 }
 
 window.addEventListener('click', newPage);

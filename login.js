@@ -23,11 +23,9 @@ function login(e) {
     if (userInnerArray.some(userAuth) && passInnerArray.some(passAuth)) {
         modal.style.display = "block";
         modalText.innerHTML = `Welcome ${userInputText}`;
-        console.log(iu, ip);
     } else {
         modal.style.display = "block";
         modalText.innerHTML = 'Incorrect Username or Password';
-        console.log(iu, ip);
     }
     if (!userInputText || !passInputText) {
         modal.style.display = "block";
@@ -53,7 +51,6 @@ function register(e) {
     if (userInnerArray.some(userAuth)) {
         modal.style.display = "block";
         modalText.innerHTML = 'This username already exists.';
-        console.log(iu, ip);
     } else {
         num++;
         localStorage.setItem(`username${num}`, userInputText);
@@ -64,7 +61,6 @@ function register(e) {
         ip.push([passInnerArray[num]]);
         modal.style.display = "block";
         modalText.innerHTML = 'Account registered. You may now log in.';
-        console.log(iu, ip);
     }
     if (!userInputText || !passInputText) {
         modal.style.display = "block";

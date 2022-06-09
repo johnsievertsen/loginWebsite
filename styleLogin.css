@@ -90,7 +90,7 @@ button[type=submit] {
     width: 80%;
     /* Could be more or less, depending on screen size */
     text-align: center;
-    font: bold 20px "Helvetica Neue";
+    font: bold 15px "Helvetica Neue";
     color: blueviolet;
 }
 

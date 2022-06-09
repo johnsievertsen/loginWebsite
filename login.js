@@ -89,5 +89,6 @@ function register(e) {
         }
     }
 }
+
 loginBtn.addEventListener('click', login);
 registerBtn.addEventListener('click', register);

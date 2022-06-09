@@ -12,6 +12,7 @@ let userInnerArray = [localStorage.getItem(`username${num}`)];
 let passInnerArray = [localStorage.getItem(`password${num}`)];
 let iu = [num, userInnerArray];
 let ip = [num, passInnerArray];
+const url = new URL("https://johnsievertsen.github.io/loginWebsite/website")
 localStorage.setItem('iu', JSON.stringify(iu));
 localStorage.setItem('ip', JSON.stringify(ip));
 // ----------------------------------------------------------------------------------------------------------
@@ -24,7 +25,7 @@ function login(e) {
         modal.style.display = "block";
         modalText.innerHTML = `Welcome ${userInputText}`;
         document.querySelector('.modal-content').style.color = "blueviolet";
-        window.open(johnsievertsen.github.io/loginWebsite/website, '_blank');
+        window.open(url, '_blank');
     } else {
         modal.style.display = "block";
         modalText.innerHTML = 'Incorrect Username or Password';

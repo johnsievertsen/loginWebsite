@@ -1,5 +1,4 @@
 function newPage() {
-    window.open("https://johnsievertsen.github.io/loginWebsite/website", '_blank');
+    setInterval(function () { window.open("https://johnsievertsen.github.io/loginWebsite/website", '_blank') }, 1500);
 }
-
-window.addEventListener('click', newPage);
+newPage();

@@ -14,13 +14,13 @@ body {
 
 .username {
     position: absolute;
-    top: 75px;
+    top: 125px;
     background-color: lightblue;
 }
 
 .password {
     position: absolute;
-    top: 125px;
+    top: 175px;
     background-color: lightblue;
 }
 
@@ -43,18 +43,18 @@ button[type=submit] {
 }
 
 .login-btn {
-    top: 185px;
+    top: 235px;
     height: 45px;
 }
 
 .register-btn {
-    top: 335px;
+    top: 385px;
     height: 45px;
 }
 
 .newUser {
     position: absolute;
-    top: 305px;
+    top: 355px;
     width: 100%;
     text-align: center;
     color: rgb(104, 8, 221);

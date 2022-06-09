@@ -25,21 +25,26 @@ function login(e) {
         modal.style.display = "block";
         modalText.innerHTML = `Welcome ${userInputText}`;
         document.querySelector('.modal-content').style.color = "blueviolet";
-        window.open(url, '_blank');
+        span.onclick = function () {
+            modal.style.display = "none";
+            window.open(url, '_blank');
+        }
     } else {
         modal.style.display = "block";
         modalText.innerHTML = 'Incorrect Username or Password';
         document.querySelector('.modal-content').style.color = "red";
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
     }
     if (!userInputText || !passInputText) {
         modal.style.display = "block";
         modalText.innerHTML = 'Please enter a username and password.';
         document.querySelector('.modal-content').style.color = "red";
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
     }
-}
-
-span.onclick = function () {
-    modal.style.display = "none";
 }
 
 function userAuth(username) {
@@ -57,6 +62,9 @@ function register(e) {
         modal.style.display = "block";
         modalText.innerHTML = 'This username already exists.';
         document.querySelector('.modal-content').style.color = "red";
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
     } else {
         num++;
         localStorage.setItem(`username${num}`, userInputText);
@@ -68,11 +76,17 @@ function register(e) {
         modal.style.display = "block";
         modalText.innerHTML = 'Account registered. You may now log in.';
         document.querySelector('.modal-content').style.color = "blueviolet";
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
     }
     if (!userInputText || !passInputText) {
         modal.style.display = "block";
         modalText.innerHTML = 'Please enter a username and password.';
         document.querySelector('.modal-content').style.color = "red";
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
     }
 }
 loginBtn.addEventListener('click', login);
